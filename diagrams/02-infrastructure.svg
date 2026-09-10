@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" font-family="'Segoe UI',system-ui,-apple-system,sans-serif">
+  <defs>
+    <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7d8590"/></marker>
+    <marker id="a3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#d29922"/></marker>
+    <style>
+      .mono{font-family:'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}
+      .t{fill:#e6edf3} .m{fill:#7d8590} .g{fill:#3fb950} .r{fill:#f85149} .a{fill:#d29922} .b{fill:#58a6ff}
+    </style>
+  </defs>
+  <rect width="900" height="560" rx="10" fill="#0d1117"/>
+  <text x="32" y="44" class="t" font-size="20" font-weight="700">One Box, Two Domains, Two Jobs</text>
+  <text x="32" y="66" class="m" font-size="13">The mail server is the pivot — and its banner disagrees with DNS</text>
+  <line x1="32" y1="82" x2="868" y2="82" stroke="#21262d"/>
+
+  <!-- host -->
+  <rect x="310" y="212" width="280" height="150" rx="8" fill="#161b22" stroke="#58a6ff" stroke-opacity="0.5"/>
+  <text x="330" y="236" class="b" font-size="11" font-weight="600">ORIGIN HOST</text>
+  <text x="330" y="260" class="t mono" font-size="16" font-weight="600">50.114.206.36</text>
+  <text x="330" y="282" class="m mono" font-size="11">rDNS oh2.linveo.com · AS62564</text>
+  <line x1="330" y1="294" x2="570" y2="294" stroke="#21262d"/>
+  <text x="330" y="314" class="g mono" font-size="12">:443  OPEN</text><text x="424" y="314" class="m" font-size="11">Express redirector</text>
+  <text x="330" y="332" class="g mono" font-size="12">:25   OPEN</text><text x="424" y="332" class="m" font-size="11">SMTP, no TLS, no AUTH</text>
+  <text x="330" y="352" class="r mono" font-size="12">:80   closed</text><text x="424" y="352" class="m" font-size="11">no plain web at all</text>
+
+  <!-- left domain -->
+  <rect x="32" y="120" width="240" height="118" rx="8" fill="#161b22" stroke="#30363d"/>
+  <text x="50" y="144" class="m" font-size="11" font-weight="600">WEB-FACING DOMAIN</text>
+  <text x="50" y="167" class="t mono" font-size="13">zenviapro.store</text>
+  <text x="50" y="188" class="m mono" font-size="11">A    → 50.114.206.36</text>
+  <text x="50" y="205" class="a mono" font-size="11">MX   → mail.beeservices.shop</text>
+  <text x="50" y="222" class="m mono" font-size="11">NS   → registrar-servers.com</text>
+  <line x1="200" y1="238" x2="330" y2="266" stroke="#7d8590" stroke-width="1.5" marker-end="url(#a2)"/>
+  <text x="196" y="262" class="m" font-size="10">A</text>
+
+  <!-- right domain -->
+  <rect x="628" y="120" width="240" height="118" rx="8" fill="#161b22" stroke="#30363d"/>
+  <text x="646" y="144" class="m" font-size="11" font-weight="600">MAIL-ONLY SIBLING</text>
+  <text x="646" y="167" class="t mono" font-size="13">beeservices.shop</text>
+  <text x="646" y="188" class="r mono" font-size="11">A    → (none)</text>
+  <text x="646" y="205" class="m mono" font-size="11">MX   → mail.beeservices.shop</text>
+  <text x="646" y="222" class="r mono" font-size="11">CT   → no certificate, ever</text>
+  <line x1="700" y1="238" x2="570" y2="266" stroke="#7d8590" stroke-width="1.5" marker-end="url(#a2)"/>
+  <text x="690" y="262" class="m" font-size="10">A</text>
+
+  <!-- MX cross link -->
+  <path d="M272 150 C 450 96, 450 96, 628 150" fill="none" stroke="#d29922" stroke-width="1.5" stroke-dasharray="5,4" marker-end="url(#a3)"/>
+  <text x="404" y="106" class="a" font-size="11" font-weight="600">MX points at the OTHER domain</text>
+
+  <!-- stale helo -->
+  <rect x="230" y="400" width="440" height="120" rx="8" fill="#161b22" stroke="#f85149" stroke-opacity="0.45"/>
+  <text x="250" y="424" class="r" font-size="11" font-weight="600">THE STALE HELO — a durable cross-fleet fingerprint</text>
+  <text x="250" y="450" class="t mono" font-size="12">220 mail.zenviapro.store ESMTP</text>
+  <text x="250" y="472" class="m mono" font-size="11">$ dig +short mail.zenviapro.store A</text>
+  <text x="250" y="489" class="r mono" font-size="11">  (no answer)</text>
+  <text x="250" y="510" class="m" font-size="11">Leftover from an earlier config. They rebuild domains, not servers.</text>
+  <line x1="450" y1="362" x2="450" y2="396" stroke="#f85149" stroke-width="1.5" stroke-opacity="0.6" marker-end="url(#a2)"/>
+</svg>

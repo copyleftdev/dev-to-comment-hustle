@@ -1,0 +1,12 @@
+# captured 2026-09-10T01:34:02Z | passive recon only
+Origin host 50.114.206.36 — port state, rDNS, ASN
+
+  25 OPEN
+  80 closed/filtered
+  443 OPEN
+  465 closed/filtered
+  587 closed/filtered
+  993 closed/filtered
+
+rDNS: 36.206.114.50.oh2.linveo.com.
+ASN : "62564 | 50.114.206.0/24 | US | arin | 2011-06-20"

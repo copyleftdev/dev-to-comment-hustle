@@ -1,0 +1,11 @@
+# captured 2026-09-10T01:34:02Z | passive recon only
+SMTP banner + EHLO capabilities — 50.114.206.36:25
+
+220 mail.zenviapro.store ESMTP
+250-mail.zenviapro.store Nice to meet you, [REDACTED - echoes the CONNECTING CLIENT rDNS]
+250-PIPELINING
+250-8BITMIME
+250 SMTPUTF8
+
+# NO STARTTLS. NO AUTH. Minimal cleartext MTA.
+# The HELO name mail.zenviapro.store does NOT resolve (see 06-dns.txt).

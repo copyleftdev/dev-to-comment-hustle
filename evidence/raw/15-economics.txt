@@ -1,0 +1,22 @@
+# captured 2026-09-10T01:35:09Z
+Economics — exact interval arithmetic via agent-calc (contract calc1/0.1.0)
+
+INPUT CAVEATS:
+  25% commission, $50-200 subscription, 6-12 month retention are PUBLICLY REPORTED
+  figures for LoopCV's affiliate program, not taken from LoopCV's own terms page.
+  $38-180 annual infrastructure cost is an ESTIMATE (.store domain + budget hosting).
+
+gross revenue per referred customer:
+  [$50, $200] x [6, 12]        = [$300, $2,400]
+commission at 25%:
+  [$300, $2,400] / 4           = [$75, $600]
+conversions needed to cover one year of infrastructure:
+  [$38, $180] / [$75, $600]   = [19/300, 12/5] = [0.06, 2.4]
+
+=> AT MOST 3 SIGNUPS PER YEAR PAYS FOR THE ENTIRE OPERATION.
+
+persona namespace:
+  3185 first names x 466 surnames x 466 surnames x 100 = 69,164,186,000
+
+all agent-calc results carried checks: closed_interval_bounds_ordered=true,
+bounds_are_exact_rationals=true

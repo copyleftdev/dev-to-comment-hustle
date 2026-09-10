@@ -1,0 +1,14 @@
+# captured 2026-09-10T01:34:02Z | passive recon only
+DNS — zenviapro.store / beeservices.shop
+
+zenviapro.store            A    50.114.206.36 
+zenviapro.store            NS   dns1.registrar-servers.com. dns2.registrar-servers.com. 
+zenviapro.store            MX   10 mail.beeservices.shop. 
+zenviapro.store            TXT  "v=spf1 mx ip4:50.114.206.36 ~all" 
+beeservices.shop           NS   dns1.registrar-servers.com. dns2.registrar-servers.com. 
+beeservices.shop           MX   10 mail.beeservices.shop. 
+beeservices.shop           TXT  "v=spf1 mx -all" 
+mail.beeservices.shop      A    50.114.206.36 
+
+# NOTE: mail.zenviapro.store has NO A record yet is the SMTP HELO name.
+# NOTE: beeservices.shop has NO A record — mail-only domain.

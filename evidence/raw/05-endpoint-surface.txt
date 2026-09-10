@@ -1,0 +1,8 @@
+# captured 2026-09-10T01:33:41Z | passive recon only
+Endpoint surface
+
+/             -> 404  [text/html; charset=utf-8] 139b
+/massapply    -> 302 https://loopcv.pro/?via=md [text/plain; charset=utf-8] 48b
+/index.php    -> 404  [text/html; charset=utf-8] 9b
+/robots.txt   -> 404  [text/html; charset=utf-8] 9b
+/admin        -> 404  [text/html; charset=utf-8] 9b

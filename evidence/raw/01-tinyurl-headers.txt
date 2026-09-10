@@ -1,0 +1,29 @@
+# captured 2026-09-10T01:33:41Z | passive recon only
+$ curl -sS -I 'https://tinyurl.com/36nsecn5'
+
+HTTP/2 301 
+date: Thu, 10 Sep 2026 01:33:42 GMT
+content-type: text/html; charset=utf-8
+location: https://zenviapro.store/massapply?whose=yahoo
+cf-ray: a38aafa0adaef7d3-LAX
+cf-cache-status: EXPIRED
+cache-control: no-store, no-cache, must-revalidate
+expires: 0
+server: cloudflare
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+pragma: no-cache
+content-security-policy: default-src 'self'; frame-ancestors 'none'; object-src 'none';
+permissions-policy: camera=(), geolocation=(), microphone=(), payment=()
+referrer-policy: unsafe-url
+x-content-type-options: nosniff
+x-lighttpd-longurl: https://zenviapro.store/massapply?whose=yahoo
+x-robots-tag: noindex
+x-snippet-status: MISS
+x-tinyurl-redirect: eyJpdiI6IlA2T2xQVStGYUdYenF6UXRjK3pwMXc9PSIsInZhbHVlIjoiQlhMUkhPQ1lCUFI0ZkRhTWJqN1BpYVBGeXllRzVwTFNGTEYyRkYxcXBnKy9qaVJYTThEVWpGUGltUnRneWdIM1N0K3ZjQ3BYdyszL1QvdFVZVHo4aXc9PSIsIm1hYyI6IjZkODYyMDI2MzM3ZTA0YTg1YTlmYzQ2YWZhOTQ5ZWQ3OGZkM2UyNGU5NjZjNWUwNGJmNDdkN2M2NDVmMWRhODAiLCJ0YWciOiIifQ==
+x-tinyurl-redirect-type: redirect
+x-tinyurl-target: https://zenviapro.store/massapply?whose=yahoo
+x-trace-id: 01M24F60XF41CBZZBJ0V6SK6BE
+x-xss-protection: 1; mode=block
+set-cookie: __cf_bm=03QVnlrVRP6pV4vUXaX9Wx_7LLoFuZnDv6T1IvEkOpY-1789004021.8657918-1.0.1.1-76PQJl2R8Krt.T7XON8VnK3kVlP7t48pTiGYOvT5uZpqwfxbQlLEG_3mgtwi17_4uqd8bwkx5cVg5cCkZPj.BaHT8FVCtohIXKOl0PJL_zdntRF.XbanR3X93UMPZlZ7; HttpOnly; SameSite=None; Secure; Path=/; Domain=tinyurl.com; Expires=Thu, 10 Sep 2026 02:03:42 GMT
+alt-svc: h3=":443"; ma=86400
+

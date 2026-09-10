@@ -1,0 +1,14 @@
+# captured 2026-09-10T01:34:27Z | DEV public API
+$ curl 'https://dev.to/api/users/by_username?url=jaylonstiedemannterry78-993'
+
+{
+  "username": "jaylonstiedemannterry78-993",
+  "name": "Jaylon_Stiedemann-Terry78",
+  "joined_at": "Feb  2, 2026",
+  "summary": null,
+  "location": null,
+  "website_url": null,
+  "twitter_username": null,
+  "github_username": null,
+  "type_of": "user"
+}

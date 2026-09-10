@@ -1,0 +1,24 @@
+# captured 2026-09-10T01:34:42Z
+Faker verification — vendored copies in evidence/vendor/ (source: https://raw.githubusercontent.com/faker-js/faker/next/src/locales/en/person)
+
+TOKEN        FILE            LINE
+Jaylon       first_name.ts   2514
+Stiedemann   last_name.ts    408
+Terry        last_name.ts    417
+
+last_name.ts  entries: 466
+last_name.ts  lines containing a hyphen: 0
+first_name.ts entries: 3185
+
+=> Faker's surname list has ZERO hyphens, so 'Stiedemann-Terry' is TWO independent draws.
+=> Template is CUSTOM, not stock faker.internet.username():
+   {firstName}_{lastName}-{lastName}{2 digits}
+
+Namespace = 3185 x 466 x 466 x 100 = 69,164,186,000 distinct personas
+(computed exactly with agent-calc interval arithmetic — see 15-economics.txt)
+
+Username collision test (rules out '-993' being a prior collision):
+  jaylonstiedemannterry78        HTTP 404
+  jaylonstiedemannterry78-993    HTTP 200
+  jaylonstiedemannterry          HTTP 404
+  => base username is FREE, so '-993' is DEV's own normalization suffix.

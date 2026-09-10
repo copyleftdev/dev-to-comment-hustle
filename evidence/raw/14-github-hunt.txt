@@ -1,0 +1,39 @@
+# captured 2026-09-10T01:35:07Z
+GitHub attribution hunt — result: NO attribution artifacts exist
+
+== direct IOC code searches ==
+  36nsecn5             hits=0
+  50.114.206.36        hits=0
+  zenviapro.store      hits=0
+  beeservices.shop     hits=0
+
+== PhishDestroy destroylist (curated phishing/scam domains) ==
+  source: https://raw.githubusercontent.com/phishdestroy/destroylist/HEAD/list.txt
+  entries: 202659
+  zenviapro.store   -> 0 matches
+  beeservices.shop  -> 0 matches
+  loopcv.pro        -> 0 matches
+  only zenvia* entry: zenviacapitalltd.org (unrelated financial scam)
+  => SECOND independent source agreeing with kilo's NOT_OBSERVED verdict.
+
+== RULED OUT: zenvia*.info cluster (phishdestroy/namesilo-evidence) ==
+  zenviapro.info     asa.ns.cloudflare.com. harley.ns.cloudflare.com. 
+  zenviahub.info     asa.ns.cloudflare.com. harley.ns.cloudflare.com. 
+  zenviaetc.info     asa.ns.cloudflare.com. harley.ns.cloudflare.com. 
+  zenvias.info       asa.ns.cloudflare.com. harley.ns.cloudflare.com. 
+  zenviatime.info    asa.ns.cloudflare.com. harley.ns.cloudflare.com. 
+  zenviazone.info    asa.ns.cloudflare.com. harley.ns.cloudflare.com. 
+  zenviapro.store    dns1.registrar-servers.com. dns2.registrar-servers.com. 
+  zenvia.com (real)  dana.ns.cloudflare.com. lex.ns.cloudflare.com. 
+  => the six .info share ONE Cloudflare account (asa+harley) = one operator,
+     but NOT ours: NameSilo/Cloudflare/.info vs Namecheap/registrar-servers/Linveo/.store.
+     Shared label only. Both ride the real Zenvia (Brazilian CPaaS) brand.
+     LESSON: a matching name is not a matching operator.
+
+== LoopCV affiliate tokens published on GitHub (ecosystem context) ==
+  Ramas68/LoopCV-Promo-Codes         README.md                  -> ?via=abdul
+  diaodiaozhuye/awesome-ai-startups  data/products/loopcv.json  -> ?via=toolify
+  heukshow/aicity-os                 .../tool/loopcv.html       -> ?via=sang-kwon
+  ours (comment spam)                                           -> ?via=md
+  => public affiliates sign their work with names. 'md' is opaque.
+     The only deliberate opsec in the campaign is on the string that gets paid.

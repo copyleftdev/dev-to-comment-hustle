@@ -1,0 +1,18 @@
+indicator,type,role,first_seen,confidence,notes
+tinyurl.com/36nsecn5,url,delivery,2026-09-09,confirmed,Shortener entry point posted as dev.to comment spam
+zenviapro.store,domain,redirector,2026-01-27,confirmed,Namecheap; created 2026-01-27; first TLS cert 2026-07-30
+https://zenviapro.store/massapply,url,redirector,2026-09-09,confirmed,Only live route; all other paths 404
+beeservices.shop,domain,mail,unknown,confirmed,Mail-only sibling; no A record; no CT history
+mail.beeservices.shop,hostname,mail,unknown,confirmed,MX for zenviapro.store; resolves to origin IP
+50.114.206.36,ipv4,origin,2026-09-09,confirmed,Ports 443 and 25 open; 80 closed; rDNS oh2.linveo.com
+AS62564,asn,hosting,2011-06-20,confirmed,Linveo; 50.114.206.0/24; US
+jaylonstiedemannterry78-993,devto_account,persona,2026-02-02,confirmed,user_id 3748129; 0 articles; empty profile; Faker-generated name
+via=md,affiliate_token,monetization,2026-09-09,confirmed,Rewardful referral token on loopcv.pro
+mail.zenviapro.store,smtp_helo,fingerprint,2026-09-09,confirmed,SMTP banner name that does NOT resolve in DNS; stale config pivot
+{firstName}_{lastName}-{lastName}{NN},persona_template,fingerprint,2026-09-09,confirmed,All tokens in Faker en locale; Faker emits no hyphenated surnames so this is a custom template
+loopcv.pro,domain,destination,NA,benign,DO NOT BLOCKLIST - legitimate SaaS abused by a third-party affiliate
+zenviapro.info,domain,NOT_RELATED,2025-10-17,ruled_out,Part of a 6-domain NameSilo/Cloudflare cluster flagged by PhishDestroy; DIFFERENT operator - shares only the brandable label
+zenviahub.info,domain,NOT_RELATED,2025-10-17,ruled_out,Same ruled-out cluster (asa/harley Cloudflare NS pair)
+via=abdul,affiliate_token,ecosystem,2025-04-09,confirmed,Ramas68/LoopCV-Promo-Codes - unrelated LoopCV affiliate; shows the SEO-backlink genre
+via=toolify,affiliate_token,ecosystem,NA,confirmed,diaodiaozhuye/awesome-ai-startups - unrelated LoopCV affiliate
+via=sang-kwon,affiliate_token,ecosystem,NA,confirmed,heukshow/aicity-os - unrelated LoopCV affiliate

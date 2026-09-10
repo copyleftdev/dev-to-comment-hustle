@@ -1,0 +1,22 @@
+# captured 2026-09-10T01:34:02Z | passive recon only
+$ whois zenviapro.store
+
+Domain Name: zenviapro.store
+Registry Domain ID: D625852513-CNIC
+Registrar WHOIS Server: whois.namecheap.com
+Registrar URL: https://www.namecheap.com/
+Updated Date: 2026-03-01T12:14:40.000Z
+Creation Date: 2026-01-27T22:11:21.000Z
+Registry Expiry Date: 2027-01-27T23:59:59.000Z
+Registrar: NameCheap, Inc.
+Registrar IANA ID: 1068
+Registrar Abuse Contact Email: abuse@namecheap.com
+Registrar Abuse Contact Phone: +1.9854014545
+Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited
+Name Server: dns1.registrar-servers.com
+Name Server: dns2.registrar-servers.com
+DNSSEC: unsigned
+For more information on domain status codes, please visit https://icann.org/epp
+that send queries or data to the systems of any Registrar or any
+Registry except as reasonably necessary to register domain names or
+modify existing domain name registrations.

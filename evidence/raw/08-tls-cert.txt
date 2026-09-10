@@ -1,0 +1,9 @@
+# captured 2026-09-10T01:34:02Z | passive recon only
+$ openssl s_client -connect 50.114.206.36:443 -servername zenviapro.store
+
+subject=CN=zenviapro.store
+issuer=C=US, O=Let's Encrypt, CN=YR1
+notBefore=Jul 30 09:04:42 2026 GMT
+notAfter=Oct 28 09:04:41 2026 GMT
+X509v3 Subject Alternative Name: 
+    DNS:zenviapro.store

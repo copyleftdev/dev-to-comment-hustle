@@ -1,0 +1,7 @@
+# captured 2026-09-10T01:33:41Z | passive recon only
+User-Agent cloaking matrix — all identical means NO cloaking
+
+curl/8.14.1                                                            -> 302 https://loopcv.pro/?via=md
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html) -> 302 https://loopcv.pro/?via=md
+Mozilla/5.0 (iPhone; CPU iPhone OS 17_0 like Mac OS X) Safari/604.1    -> 302 https://loopcv.pro/?via=md
+<none>                                                                 -> 302 https://loopcv.pro/?via=md

@@ -1,0 +1,10 @@
+# captured 2026-09-10T01:33:41Z | passive recon only
+whose= parameter matrix — all identical means the param is INERT
+
+yahoo      -> 302 https://loopcv.pro/?via=md
+gmail      -> 302 https://loopcv.pro/?via=md
+outlook    -> 302 https://loopcv.pro/?via=md
+devto      -> 302 https://loopcv.pro/?via=md
+reddit     -> 302 https://loopcv.pro/?via=md
+<empty>    -> 302 https://loopcv.pro/?via=md
+XXtest     -> 302 https://loopcv.pro/?via=md

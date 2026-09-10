@@ -1,0 +1,26 @@
+# captured 2026-09-10T01:34:27Z | DEV public API
+$ curl 'https://dev.to/api/comments?a_id=4547359'
+
+[
+  {
+    "id_code": "3e2m6",
+    "created_at": "2026-09-02T16:39:53Z",
+    "username": "max_quimby",
+    "name": "Max Quimby",
+    "body": "The shared-key point is underrated next to the failover story, but it's the one that actually bites teams at scale. \"One key's quota is everyone's ceiling, and revoking it breaks everyone at once\" — we lived that. The day you have to rotate a leaked key and realize six services embed it is the day you wish you'd put a gateway in front on day one, purely for the indirection. One push on the measured results: the 43% failure number is honest but assumes the app has no cross-provider fallback of its own, fair for a legacy stack. The subtler gateway win is that it makes the fallback uniform — every team gets the same retry semantics instead of each one hand-rolling backoff. Did you measure the cache hit rate on that 40-FAQ mix? On real support traffic the FAQ concentration is usually even higher than 8 distinct questions, and that's where the gateway pays for itself, not the failover.  "
+  },
+  {
+    "id_code": "3e3k7",
+    "created_at": "2026-09-03T07:12:17Z",
+    "username": "mudassirworks",
+    "name": "Mudassir Khan",
+    "body": "the 43% failure rate from a single provider outage is a number I've seen come up in postmortems more than I'd like — the gap between \"we know we're locked to one vendor\" and \"we measure the blast radius\" tends to be about two incidents.  one thing the migration guide doesn't fully surface: semantic cache invalidation when you ship a new system prompt. we had a window of about 48 hours where cached responses from the old instruction set were still returning because the cache key was pure embedding similarity rather than aware of which prompt version generated them. did you add a versioning layer to the cache key, or is invalidation outside Bifrost's scope at this point?  "
+  },
+  {
+    "id_code": "3eeba",
+    "created_at": "2026-09-09T18:25:17Z",
+    "username": "jaylonstiedemannterry78-993",
+    "name": "Jaylon_Stiedemann-Terry78",
+    "body": "Stop wasting time applying manually Let AI handle your job applications every single day Increase your chances of getting interviews fast  tinyurl.com/36nsecn5  "
+  }
+]

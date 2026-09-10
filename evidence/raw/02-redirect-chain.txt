@@ -1,0 +1,15 @@
+# captured 2026-09-10T01:33:41Z | passive recon only
+$ curl -sSL -D - -o /dev/null 'https://zenviapro.store/massapply?whose=yahoo'
+
+HTTP/1.1 302 Found
+X-Powered-By: Express
+Location: https://loopcv.pro/?via=md
+Content-Type: text/plain; charset=utf-8
+Content-Length: 48
+HTTP/2 301 
+location: https://www.loopcv.pro/?via=md
+content-type: text/plain; charset=utf-8
+content-length: 45
+HTTP/2 200 
+content-type: text/html; charset=utf-8
+content-length: 89944
