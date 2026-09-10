@@ -202,6 +202,14 @@ Working notes with full command output: [`evidence/EVIDENCE.md`](evidence/EVIDEN
 Requires `curl`, `dig`, `jq`, `openssl`. Everything is read-only.
 
 > [!NOTE]
+> Steps 9 and 10 query live DEV endpoints. If the account or comment has since been removed —
+> a likely and desirable outcome — those steps return 404 or an empty thread while every other
+> step still reproduces. The original captures are preserved in
+> [`11-comment-thread.json`](evidence/raw/11-comment-thread.json) and
+> [`12-account.json`](evidence/raw/12-account.json) and verified by
+> [`SHA256SUMS`](evidence/SHA256SUMS). Takedown invalidates the reproduction, not the evidence.
+
+> [!NOTE]
 > Step 8 opens a TCP connection to port 25. The server's `EHLO` reply echoes **your own**
 > reverse DNS back at you. Run it from a VPS, not from home — the script redacts that line,
 > but the value still crosses your terminal.

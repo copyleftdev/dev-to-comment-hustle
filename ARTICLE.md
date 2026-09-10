@@ -198,6 +198,15 @@ The profile is a vacuum:
 
 Zero published articles. No bio, no location, no links, no socials. Seven months of membership and a single comment to show for it.
 
+> **A note on durability.** If DEV removes this account — which it may well do — the profile
+> lookup above starts returning 404 and the account page goes dead. That doesn't retract
+> anything: the raw captures are committed in the
+> [evidence repo](https://github.com/copyleftdev/dev-to-comment-hustle/tree/main/evidence/raw),
+> checksummed, and dated. Read a 404 as the platform doing its job, not as a claim being
+> withdrawn. The infrastructure findings are independent of the account either way, and the
+> *pattern* — a Faker-templated name, an empty profile, an aged dormant account — outlives any
+> single username.
+
 ### The name is machine-generated, and I can prove it
 ![Faker token decomposition and the zero-hyphen proof](https://raw.githubusercontent.com/copyleftdev/dev-to-comment-hustle/main/diagrams/04-persona.png)
 
